@@ -20,4 +20,3 @@ public class FornecedorMapper {
         f.setContato(dto.contato());
         return f;
     }
-}
