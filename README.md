@@ -44,12 +44,12 @@ Deletar reagente
 DELETE /reagentes/{id} → Remove um reagente do sistema.
 
 💻 Tecnologias utilizadas
-Java 17
-Spring Web
-Spring Boot DevTools
-Spring Data JPA
-H2 Database
-Maven
+* Java 17
+* Spring Web
+* Spring Boot DevTools
+* Spring Data JPA
+* H2 Database
+* Maven
 
 🏗️ Estrutura do projeto
 O projeto está organizado em pacotes para manter tudo limpo e fácil de manter. O pacote model contém as entidades Reagente e Fornecedor, o dto contém os objetos de transferência de dados, e o mapper faz a conversão entre DTOs e entidades. O repository é responsável pelo acesso ao banco de dados, o service contém a lógica de negócio e o controller define os endpoints da API REST.
