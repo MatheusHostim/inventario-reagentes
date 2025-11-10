@@ -35,4 +35,24 @@ Exemplo de JSON de entrada:
     "contato": "contato@labfornecedores.com"
   }
 }
+```
 
+Atualizar reagente
+PUT /reagentes/{id} → Atualiza os dados de um reagente existente.
+
+Deletar reagente
+DELETE /reagentes/{id} → Remove um reagente do sistema.
+
+💻 Tecnologias utilizadas
+Java 17
+Spring Web
+Spring Boot DevTools
+Spring Data JPA
+H2 Database
+Maven
+
+🏗️ Estrutura do projeto
+O projeto está organizado em pacotes para manter tudo limpo e fácil de manter. O pacote model contém as entidades Reagente e Fornecedor, o dto contém os objetos de transferência de dados, e o mapper faz a conversão entre DTOs e entidades. O repository é responsável pelo acesso ao banco de dados, o service contém a lógica de negócio e o controller define os endpoints da API REST.
+
+📊 Concluindo
+A API permite gerenciar reagentes de forma completa, garantindo que as informações de reagentes e fornecedores fiquem sempre consistentes. Usando DTOs e mapeadores, conseguimos separar os dados que são exibidos dos dados que ficam no banco, deixando o sistema mais organizado e fácil de manter. O Spring Boot facilita muito o processo de configuração e inicialização do projeto, trazendo suporte automático para banco de dados e endpoints REST. Isso tudo faz deixa o projeto simples e funcional, estando pronto pra ser expandido caso precise adicionar autenticação, relatórios ou dashboards de estoque.
